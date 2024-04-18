@@ -26,8 +26,28 @@ formally required a link back or credit to [Natural Earth][naturalearth], [Lexma
 
 All source code is licenced under the [MIT licence][mit].
 
-[mit]: https://opensource.org/licenses/MIT
-[naturalearth]: http://www.naturalearthdata.com/
-[pddl]: http://opendatacommons.org/licenses/pddl/1.0/
-[lexman]: http://github.com/lexman
-[okfn]: http://okfn.org/
+<Map
+  center={{
+    latitude: 45,
+    longitude: 0
+  }}
+  layers={[
+    {
+      colorScale: {
+        ending: '#00ff00',
+        starting: '#ff0000'
+      },
+      data: './data/admin1-us.geojson',
+      url: './data/admin1-us.geojson',
+      name: 'Polygons',
+      tooltip: {
+        propNames: [
+          'name'
+        ]
+      }
+    }
+  ]}
+  title="Seas and Oceans Map"
+  zoom={2}
+/>
+
