@@ -37,8 +37,9 @@ All source code is licenced under the [MIT licence][mit].
         ending: '#00ff00',
         starting: '#ff0000'
       },
-      data: './data/admin1-us.geojson',
-      url: './data/admin1-us.geojson',
+      data: {
+        url: 'data/admin1-us.geojson'
+      },
       name: 'Polygons',
       tooltip: {
         propNames: [
